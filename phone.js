@@ -6,7 +6,8 @@ Event.handler('Infrajs.onshow', function () {
 		ph.each(function () {
 			if ($(this).data('phone')) return;
 			var number=$(this).text();
-			$(this).html(number.substr(0,5) + '<span style="cursor:pointer; color:#3d6e8e">...</span>');
+			var len = number.length;
+			$(this).html(number.substr(0,len-3) + '<span style="cursor:pointer; color:#3d6e8e">...</span>');
 			$(this).data('phone', number);
 			$(this).css('visibility','visible');
 			$(this).click(function () {
