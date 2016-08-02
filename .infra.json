@@ -1,6 +1,6 @@
 {
 	"pub":["yaCounter"],
-	"yaCounter":"24452174",
+	"yaCounter":"",
 	"dependencies":"event",
 	"js":"phone.js",
 	"css":"phone.css"
