@@ -17,7 +17,13 @@ Event.handler('Infrajs.onshow', function () {
 					//В метрике должна быть создана цель с индентификатором phone
 					window['yaCounter'+conf['yaCounter']].reachGoal('phone');
 				}
-
+				if (window._gaq) {
+				 	_gaq.push([
+				            '_trackEvent',
+				            'Телефон',
+				            'Клик'
+				        ]);
+				}
 				sessionStorage.setItem("phone", true);
 				ph.each(function () {
 					$(this).text($(this).data('phone'));
