@@ -1,4 +1,4 @@
-Event.handler('Infrajs.onshow', function () {
+Event.handler('Controller.onshow', function () {
 	var ph=$('.magic-phone');
 	if (sessionStorage["phone"]) {
 		ph.css('visibility','visible');
@@ -12,7 +12,7 @@ Event.handler('Infrajs.onshow', function () {
 			$(this).css('visibility','visible');
 			$(this).click(function () {
 				
-				var conf = infra.config('magic-phone');
+				var conf = Config('magic-phone');
 				if (conf['yaCounter']) {
 					//В метрике должна быть создана цель с индентификатором phone
 					window['yaCounter'+conf['yaCounter']].reachGoal('phone');
