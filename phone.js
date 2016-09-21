@@ -12,7 +12,7 @@ Event.handler('Controller.onshow', function () {
 			$(this).css('visibility','visible');
 			$(this).click(function () {
 				
-				var conf = Config('magic-phone');
+				var conf = Config.get('magic-phone');
 				if (conf['yaCounter']) {
 					//В метрике должна быть создана цель с индентификатором phone
 					window['yaCounter'+conf['yaCounter']].reachGoal('phone');
