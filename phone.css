@@ -1,4 +1,5 @@
 .magic-phone {
+	visibility: hidden;
 	cursor: pointer;
 	position: relative;
 }
