@@ -18,7 +18,7 @@ Event.handler('Controller.onshow', function ()
 					textEnd = '<span style="filter:blur(1px); opacity: 0.8;">-</span><span style="filter:blur(3px); opacity: 0.5;">8</span><span style="filter:blur(4px); opacity: 0.3;">8</span>';
 					break;
 				case 'background':
-					textEnd = '<span style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));"></span>';
+					textEnd = '<span style="position: absolute; margin-left:-40px; top:0; width: 40px; height:100%; background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));"></span><span style="color:#CCC">&nbsp;&nbsp;&nbsp;&nbsp;</span>';
 					break;
 			}				
 			$(this).html(number.substr(0, len-3) + textEnd);
