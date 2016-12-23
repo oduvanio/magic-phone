@@ -15,7 +15,7 @@ Event.handler('Controller.onshow', function ()
 					textEnd = '<span style="cursor:pointer; color:#3d6e8e">...</span>';
 					break;
 				case 'blur':
-					textEnd = '<span style="filter:blur(1px); opacity: 0.8;">-</span><span style="filter:blur(3px); opacity: 0.5;">8</span><span style="filter:blur(4px); opacity: 0.3;">8</span>';
+					textEnd = '<span style="filter:blur(1px); -webkit-filter:blur(1px); opacity: 0.8;">-</span><span style="filter:blur(3px); -webkit-filter:blur(3px); opacity: 0.5;">8</span><span style="filter:blur(4px); -webkit-filter:blur(4px); opacity: 0.3;">8</span>';
 					break;
 				case 'background':
 					textEnd = '<span style="position: absolute; margin-left:-40px; top:0; width: 40px; height:100%; background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));"></span><span style="color:#CCC">&nbsp;&nbsp;&nbsp;&nbsp;</span>';
