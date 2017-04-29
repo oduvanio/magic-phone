@@ -24,18 +24,8 @@ Event.handler('Controller.onshow', function ()
 			$(this).html(number.substr(0, len-3) + textEnd);
 			$(this).data('phone', number);
 			$(this).css('visibility', 'visible');
-			$(this).click(function () {	
-				if (window.Ya && Ya._metrika.counter) {
-					var ya = Ya._metrika.counter;
-					console.info('ya.reachGoal phone');
-					ya.reachGoal('phone');
-				}
-				if (window.ga) {
-					ga('send', 'event', 'Телефон', 'Клик');
-					ga('send', 'event', 'phone');
-					console.info('ga.reachGoal phone');
-				}
-
+			$(this).click(function () {
+				Goal.reach('phone');
 				sessionStorage.setItem("phone", true);
 				ph.each(function () {
 					$(this).text($(this).data('phone'));
