@@ -4,6 +4,7 @@
 	"homepage":"https://github.com/oduvanio/magic-phone",
 	"license": "GPL3",
 	"require": {
-		"infrajs/config":"~1"
+		"infrajs/config":"~1",
+		"akiyatkin/goal":"~1"
 	}
 }
