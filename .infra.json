@@ -1,7 +1,7 @@
 {
 	"pub":["yaCounter", "design"],
 	"dependencies":"event",
-	"js":"phone.js",
+	"js":["phone.js", "infra.js"],
 	"css":"phone.css",
 	"design":"background"
 }
