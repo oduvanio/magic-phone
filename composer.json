@@ -2,7 +2,6 @@
 	"name": "oduvanio/magic-phone",
 	"description":"Статистика просмотра телефона",
 	"homepage":"https://github.com/oduvanio/magic-phone",
-	"license": "GPL3",
 	"require": {
 		"infrajs/config":"~1",
 		"akiyatkin/goal":"~1"
